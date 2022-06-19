@@ -15,7 +15,7 @@ class SimpleReport:
         return(
             f"Data de fabricação mais antiga: {min(lista_fabr)}\n"
             f"Data de validade mais próxima: {min(lista_valid)}\n"
-            f"Empresa com mais produtos:"
+            f"Empresa com mais produtos: "
             f"{max(dic_empres, key = dic_empres.get)}"
         )
 

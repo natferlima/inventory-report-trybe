@@ -13,9 +13,9 @@ class CompleteReport(SimpleReport):
                 dic_empres[produto["nome_da_empresa"]] += 1
 
         for key, value in dic_empres.items():
-            empres_qtd += f"- {key}, Inc.: {value}\n"
+            empres_qtd += f"- {key}: {value}\n"
 
         return SimpleReport.generate(data) + (
-            f"Produtos estocados por empresa:"
+            f"\nProdutos estocados por empresa:\n"
             f"{ empres_qtd }"
         )
